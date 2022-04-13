@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+@Styles.Render("~/Content/css")
+<h2>CHỨC NĂNG GỬI EMAIL</h2>
+<div class="container">
+    <form action="/GuiEMail_61133539/Index" method="post">
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Gửi từ email:
+            </div>
+            <div>
+                <input type="email" name="From" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Mật khẩu:
+            </div>
+            <div>
+                <input type="text" name="Password" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Gửi đến email:
+            </div>
+            <div>
+                <input type="email" name="To" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Tiêu đề:
+            </div>
+            <div>
+                <input type="text" name="Subject" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Nội dung:
+            </div>
+            <div>
+                <textarea name="Body" placeholder="Nhập nội dung"></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <input type="submit" value="Gửi email" class="col-lg-offset-2" />
+        </div>
+    </form>
+</div>
+

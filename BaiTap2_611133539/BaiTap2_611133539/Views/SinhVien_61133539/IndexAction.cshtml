@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "IndexAction";
+    Layout = null;
+}
+@Styles.Render("~/Content/css")
+<h2>Action</h2>
+<h2 style="">THÔNG TIN SINH VIÊN</h2>
+
+<form name="f1" action="/Sinhvien_61133539/UseAction" method="post">
+    <div class="row" style="margin:20px">
+        <div class="col-lg-2"> Mã sinh viên </div>
+        <div class="col-lg-4"> <input type="text" name="mssv" /> </div>
+    </div>
+    <div class="row" style="margin:20px">
+        <div class="col-lg-2"> Họ và tên: </div>
+        <div class="col-lg-4"> <input type="text" name="hoten" /> </div>
+    </div>
+    <div class="row" style="margin:20px">
+        <div class="col-lg-2"> Điểm:  </div>
+        <div class="col-lg-4"> <input type="text" name="diem" /></div>
+    </div>
+    <div class="row" style="margin:20px">
+        <input type="submit" value="Đăng ký" class="btn col-lg-offset-2" />
+    </div>
+
+</form>
+

@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+@Styles.Render("~/Content/css")
+
+<h2>Thông tin thành viên đăng ký</h2>
+<div class="container">
+    <form  action="/NhanVien_61133539/Confirm" method="post" enctype="multipart/form-data">
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Mã số nhân viên:
+            </div>
+            <div>
+                <input type="text" name="EmpId" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Họ và tên:
+            </div>
+            <div>
+                <input type="text" name="Name" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Ngày sinh:
+            </div>
+            <div>
+                <input type="text" name="BirthOfDate" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Email:
+            </div>
+            <div>
+                <input type="email" name="Email" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Mật khẩu:
+            </div>
+            <div>
+                <input type="password" name="Password" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Đơn vị:
+            </div>
+            <div>
+                <input type="text" name="Department" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <div class="col-lg-2">
+                Ảnh đại diện:
+            </div>
+            <div>
+                <input type="file" name="Avatar" />
+            </div>
+        </div>
+        <div class="row" style="margin:10px">
+            <input type="submit" value="Đăng ký" class="col-lg-offset-2" />
+        </div>
+    </form>
+</div>

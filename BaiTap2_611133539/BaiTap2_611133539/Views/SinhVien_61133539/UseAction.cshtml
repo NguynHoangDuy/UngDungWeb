@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "UseAction";
+    Layout = null;
+}
+
+@Styles.Render("~/Content/css")
+
+<h2>Thông tin sinh viên đã đăng ký</h2>
+
+<div class="row" style="margin:20px">
+    <div class="col-lg-2">
+        MSSV:
+    </div>
+    <div class="col-lg-2">
+        @ViewBag.mssv
+    </div>
+</div>
+<div class="row" style="margin:20px">
+    <div class="col-lg-2">
+        Họ và Tên:
+    </div>
+    <div class="col-lg-2">
+        @ViewBag.hoten
+    </div>
+</div>
+<div class="row" style="margin:20px">
+    <div class="col-lg-2">
+        Điểm
+    </div>
+    <div class="col-lg-2">
+        @ViewBag.diem
+    </div>
+</div>
+<div class="btn col-lg-offset-2">
+    @Html.ActionLink("Quay Lại", "/IndexAction")
+</div>
+
+
+

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@Styles.Render("~/Content/css")
+
+<h2>Thông tin thành viên đã đăng kí</h2>
+<div class="container">
+    <div class="row" style="border:5px">
+        <div class="col-lg-3">
+            <img src="@ViewBag.Avatar"  class="img-rounded" width="200" height="250" />
+        </div>
+        <div class="col-lg">
+            <div style="margin-bottom: 20px; font-weight:bold"> Mã nhân viên: @ViewBag.EmpID</div>
+            <div style="margin-bottom: 20px; font-weight: bold">Họ Tên:  @ViewBag.Name</div>
+            <div style="margin-bottom: 20px; font-weight: bold">
+                Ngày sinh: @ViewBag.BirthOfDate
+            </div>
+            <div style="margin-bottom: 20px; font-weight: bold">
+                Email: @ViewBag.Email
+            </div>
+            <div style="margin-bottom: 20px; font-weight: bold">
+                Mật khẩu: @ViewBag.Password
+            </div>
+            <div style="margin-bottom: 20px; font-weight: bold">
+                Phòng: @ViewBag.Department
+            </div>
+
+        </div>
+        <div class="col-lg-offset-3">
+            @Html.ActionLink("Quay Lại", "RegisterEmp", "Duy_61133539/RegisterEmp",
+                   new { @class = "a" })
+        </div>
+    </div>
+    
+</div>
+

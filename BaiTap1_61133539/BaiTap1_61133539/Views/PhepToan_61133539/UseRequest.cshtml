@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "UseRequest";
+    Layout= null;
+}
+
+
+<h2>Thực hiện phép toán </h2>
+<form name="f1" action="/PhepToan_61133539/UseRequest" method="post">
+    <div>
+        Nhập a: <input type="text" name="a" /> <br />
+        Nhập b: <input type="text" name="b" />
+    </div>
+    <div>
+        <input type="radio" name="pt" value="+" /> Cộng &nbsp;
+        <input type="radio" name="pt" value="-" /> Trừ &nbsp;
+        <input type="radio" name="pt" value="*" /> Nhân &nbsp;
+        <input type="radio" name="pt" value="/" /> Chia &nbsp;
+    </div>
+    <div> <input type="submit" value="Tính toán" /></div>
+    <div>
+        Kết quả: <input type="text" value=@ViewBag.KQ name="kq" />
+    </div>
+</form>
+
